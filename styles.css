@@ -179,7 +179,7 @@ ul {
   display: flex;
   align-items: flex-end;
   padding-bottom: 5rem;
-  background-image: url('/images/hero-artwork.jpg');
+  background-image: url("background.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
