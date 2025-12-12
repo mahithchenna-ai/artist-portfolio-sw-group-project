@@ -250,6 +250,149 @@ html {
    PLACEHOLDER: Team Member 2 & 3 CSS
    ========================================== */
 /* About Section CSS will go here */
+
+/* ABOUT SECTION STYLES */
+.about {
+  padding: 100px 20px;
+  background-color: #f9f7f4;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-bio {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+.skill-percentage {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #d4a574;
+}
+
+.skill-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: #e0d5c7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #d4a574, #c89850);
+  border-radius: 10px;
+  width: 0%;
+  animation: fillSkillBar 1.5s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fillSkillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--skill-width);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-bio {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 15px;
+  }
+  
+  .about-content {
+    gap: 1.5rem;
+  }
+  
+  .about-bio {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .skills-title {
+    font-size: 1.2rem;
+  }
+  
+  .skill-bar-container {
+    height: 6px;
+  }
+}
 /* ==========================================
 GALLERY & CONTACT SECTION CSS
 ========================================== */
